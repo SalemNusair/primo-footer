@@ -48,24 +48,24 @@
         </div>
       </div>
       <style type="text/css">
-        #component-ujziq *{
+        #component-mrbdn *{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
           }
-          #component-ujziq .container{
+          #component-mrbdn .container{
             margin: 0;
             overflow: auto;
           }
-          #component-ujziq .header{
+          #component-mrbdn .header{
             margin-left: 260px;
             margin-top: 100px;
             margin-bottom: 30px;
             font-size: 30px;
           }
-          #component-ujziq .content{
+          #component-mrbdn .content{
             display: flex;
             justify-content: center;
           }
-          #component-ujziq img{
+          #component-mrbdn img{
             height: 300px;
             /* width: 300px; */
             margin-right: 30px;
@@ -73,36 +73,27 @@
             min-width: 100px;
             transition: width 2s;
           }
-          #component-ujziq p{
+          #component-mrbdn p{
             text-align: left;
           }
-          #component-ujziq .lighter-paragraph{
+          #component-mrbdn .lighter-paragraph{
             color: gray;
             text-transform: uppercase;
             font-size: 11px;
           }
-          #component-ujziq .thicker-paragraph{
+          #component-mrbdn .thicker-paragraph{
             font-size: 15px;
             margin-top: 0px;
           }
-          #component-ujziq img:hover{
+          #component-mrbdn img:hover{
             box-shadow:1px 2px 2px gray;
             width: 320px;
           }
-          @media screen and (max-width:734px) {
-            #component-ujziq img{
-              height: 200px;
-              width: 300px;
-              margin-right: 30px;
-            }
-
-            #component-ujziq .header{
-              text-align: center;
-              margin-left: 0px;
-              margin-top: 50px;
-              margin-bottom: 20px;
-              font-size: 20px;
-            }
+          @media (max-width:600px) {
+              #component-mrbdn .container div {
+                display: flex;
+                justify-content: center;
+              }
           }
       </style>
     </div>
@@ -122,9 +113,9 @@
               <p class="thisrdParagraph">
                 &copy Selena. All Rights Reserved | Tel
                 <a href="+(001) 40 782 6539">+(001) 40 782 6539</a> | Email:
-                <a href="hello@selena-design.co">hello@selena-design.co</a>
+                <a href="hello@selena-design.co">hello@selena-design.co </a>
               </p>
-              <div>
+              <div class="imgContainer">
                 <a href="www.twittre.com"
                   ><img
                     src="data:image/png;base64,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&#x3D;&#x3D;"
@@ -179,6 +170,10 @@
             width:20px;
             height: 20px;
             margin-top: 3px;
+          }
+          #component-kqydl .imgContainer{
+            display:flex;
+            margin:1;
           }
           @media screen and (max-width:635) {
             #component-kqydl .container{
